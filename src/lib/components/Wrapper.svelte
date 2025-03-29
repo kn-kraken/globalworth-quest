@@ -1,11 +1,7 @@
 <script>
-    let color = "bg-[#917E76]"; // Default brown
-    let { onClick } = $props();
+    let { onClick, height = 'h-20', color = 'bg-[#37251c]' } = $props();
 </script>
 
-<!-- 917E76 -->
- <!-- #D2BFAF -- brown -->
-
-<div class={`rounded-3xl ${color} w-full h-20 flex-col items-center p-2`} on:click={onClick}>
+<div class={`rounded-3xl ${color} w-full items-center inline-block mb-5`} on:click={onClick}>
     <slot></slot>
 </div>
