@@ -38,12 +38,6 @@
 
 <h1>All Events</h1>
 
-<!-- <ul>
-    {#each data.quests as quest}
-        <li>{quest.title}</li>
-    {/each}
-</ul> -->
-
 <Overlay>
     {#each events as event}
         <Event {...event}/>
