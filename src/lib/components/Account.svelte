@@ -13,7 +13,7 @@
 	const segments = Array(8).fill(0);
 </script>
 
-kjc vjk;lbn <div class="relative w-full">
+<div class="relative w-full">
 	<div class="w-full bg-gray-200 px-4 py-2 flex items-center justify-between">
 		<div class="flex flex-col">
 			<span class="text-xs text-gray-500">{readyText}</span>
