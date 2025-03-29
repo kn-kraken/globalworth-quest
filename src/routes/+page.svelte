@@ -1,2 +1,22 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script>
+	import Map from '$lib/components/Map.svelte';
+	import { Canvas } from '@threlte/core';
+
+	let touchPosition = { x: 0, y: 0 };
+	let position = $state({ x: 0, y: 0 });
+</script>
+
+<div
+	class="relative h-full w-full touch-none"
+	onpointerdown={(e) => (touchPosition = { x: e.offsetX, y: e.offsetY })}
+	onpointermove={(e) => {
+		e.preventDefault();
+		position.x += touchPosition.x - e.offsetX;
+		position.y += touchPosition.y - e.offsetY;
+		touchPosition = { x: e.offsetX, y: e.offsetY };
+	}}
+>
+	<Canvas>
+		<Map {position} />
+	</Canvas>
+</div>
