@@ -1,5 +1,6 @@
 <!-- HeaderOverlay.svelte -->
 <script>
+
 	// Props
 	export let currentXP = 3;
 	export let totalXP = 8;
@@ -12,8 +13,8 @@
 	const segments = Array(8).fill(0);
 </script>
 
-<div class="relative w-full px-4 py-3">
-	<div class="w-full bg-gray-200 px-4 py-3 flex items-center justify-between">
+kjc vjk;lbn <div class="relative w-full">
+	<div class="w-full bg-gray-200 px-4 py-2 flex items-center justify-between">
 		<div class="flex flex-col">
 			<span class="text-xs text-gray-500">{readyText}</span>
 			<span class="text-2xl font-medium">{username}</span>
