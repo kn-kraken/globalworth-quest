@@ -4,7 +4,7 @@
 	let iconSrc = 'src/assets/icon_user.png';
 
 	function navigateTo() {
-		goto('/user');
+		goto('/leaderboard');
 	}
 </script>
 
