@@ -1,4 +1,5 @@
 <script>
+	import Account from '$lib/components/Account.svelte';
 	import Map from '$lib/components/Map.svelte';
 	import { Canvas } from '@threlte/core';
 
@@ -6,6 +7,7 @@
 	let position = $state({ x: 0, y: 0 });
 </script>
 
+<Account />
 <div
 	class="relative w-full grow touch-none"
 	onpointerdown={(e) => (touchPosition = { x: e.offsetX, y: e.offsetY })}
