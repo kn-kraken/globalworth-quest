@@ -2,7 +2,7 @@
 	import CardWrapper from './CardWrapper.svelte';
 	import ProgressButton from './ProgressButton.svelte';
 
-	let { title, description, longDescription = '', status, children } = $props();
+	let { title, description, longDescription = '', status, children, iconUrl } = $props();
 
 	function getColor(s: number) {
 		if (s == 1) {
@@ -25,7 +25,9 @@
 
 <CardWrapper {color} margin="m-5">
 		{#snippet upperChildren()}
-			<div class="mx-2 my-2 h-16 w-16 rounded-2xl bg-[#f7f7f7]"></div>
+			<div class="mx-2 my-2 h-16 w-16 rounded-2xl bg-[#f7f7f7]">
+				<img src="{iconUrl}" alt='icon' />
+			</div>
 			<div class="mt-3 ml-2 text-[#f2f2f2]">
 				<p class="text-xl font-bold">{title}</p>
 				<p>{description}</p>
