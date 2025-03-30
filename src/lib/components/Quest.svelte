@@ -1,25 +1,18 @@
 <script>
-    import Wrapper from "./Wrapper.svelte";
-    let { title, description } = $props();
+	import Card from './Card.svelte';
+	import Xp from './XP.svelte';
 
-    let isExpanded = $state(false);
-
-    function toggleExpand() {
-        isExpanded = !isExpanded;
-    }
+	let { title, description, longDescription, status, xp } = $props();
 </script>
 
-<Wrapper onClick={toggleExpand}>
-    <div class='flex'>
-        <div class='w-16 h-16 bg-[#f7f7f7] rounded-3xl'></div>
-        <div class='p-2'>
-            <p>{title}</p>
-            <p>{description}</p>
-        </div>
-    </div>
-    {#if isExpanded}
-        <div class="mt-4 p-4 bg-gray-200 rounded">
-            🎉 This component is visible!
-        </div>
-    {/if}
-</Wrapper>
+<Card {title} {description} {longDescription} {status}>
+	<script>
+		import Card from './Card.svelte';
+		import Rp from './RP.svelte';
+		import Xp from './XP.svelte';
+
+		let { title, description, rp, xp, status } = $props();
+	</script>
+
+	<Xp>{xp}</Xp>
+</Card>
