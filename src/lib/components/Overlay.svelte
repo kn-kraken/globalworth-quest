@@ -2,7 +2,7 @@
     export let color = "bg-[#D4C1AE]"; // Beige background
 </script>
 
-<div class={`mt-[80px] fixed inset-0 flex flex-col items-center gap-4 p-4 ${color} rounded-t-3xl overflow-hidden`}>
+<div class={`mt-[80px] fixed inset-0 flex flex-col items-center gap-4 px-4 pt-4 ${color} rounded-t-3xl overflow-hidden`}>
   <!-- Top Non-Scrollable Section -->
   <div class="w-full flex justify-center mb-4">
     <!-- Thin White Rounded Rectangle -->
