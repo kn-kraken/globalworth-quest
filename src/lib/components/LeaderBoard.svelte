@@ -24,7 +24,7 @@
     </div>
     {:else}
         <Stats iconSrc={iconSrc} {color} width="w-72" translate="-translate-x-[18.5rem]">
-            <div class="ml-7 w-64 h-12 rounded-r-full flex pr-2.5 pd-4">
+            <div class="ml-7 w-72 h-12 rounded-r-full flex pr-2.5 pd-4">
                 <p class="font-bold text-[#f7f7f7] ml-6 pr-2.5 md-12 ">{rank1.rp} rp</p>
                 <div class="ml-auto w-36">
                     <p class="text-[#f7f7f7] pr-2.5 md-12 font-inclusive font-light tracking-wide">{rank1.name}</p>
