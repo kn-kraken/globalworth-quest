@@ -25,17 +25,17 @@
 
 <CardWrapper {color} margin="m-5">
 		{#snippet upperChildren()}
-			<div class="m-2 h-16 w-16 rounded-2xl bg-[#f7f7f7]"></div>
-			<div class="mt-3 text-[#f2f2f2]">
+			<div class="mx-2 my-2 h-16 w-16 rounded-2xl bg-[#f7f7f7]"></div>
+			<div class="mt-3 ml-2 text-[#f2f2f2]">
 				<p class="text-xl font-bold">{title}</p>
 				<p>{description}</p>
 			</div>
 		{/snippet}
 		{#snippet lowerChildren()}
-		<div class="ml-4 mr-6 mt-0.5 py-1 text-base/4 text-white">
+		<div class="ml-4 mr-6 mt-1.5 py-1 text-base/4 text-white">
 			{longDescription}
 		</div>
-		<div class="mx-3 flex items-center pb-2 pt-[0.45em] text-[#f2f2f2]">
+		<div class="ml-4 mr-3 flex items-center pb-3 pt-1.5 text-[#f2f2f2]">
 			{@render children()}
 			<ProgressButton {status} onClick={handleOnClick} class="ml-auto" />
 		</div>

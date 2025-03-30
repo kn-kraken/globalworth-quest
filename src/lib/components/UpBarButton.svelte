@@ -1,13 +1,16 @@
 <script>
-	import { goto } from "\$app/navigation";
+	import { goto } from '$app/navigation';
 
-	let iconSrc = "src/assets/icon_user.png";
+	let iconSrc = 'src/assets/icon_user.png';
 
 	function navigateTo() {
-		goto("src/routes/user/+page.svelte")
+		goto('/user');
 	}
 </script>
 
-<button on:click={navigateTo}	class="w-10 h-10 scale-120 rounded-full border-2 border-black flex items-center justify-center bg-white">
-	<img src="{iconSrc}" alt="Icon" class="w-full h-full object-contain">
+<button
+	on:click={navigateTo}
+	class="scale-120 flex h-10 w-10 items-center justify-center rounded-full border-2 border-black bg-white"
+>
+	<img src={iconSrc} alt="Icon" class="h-full w-full object-contain" />
 </button>

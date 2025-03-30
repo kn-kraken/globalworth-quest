@@ -2,6 +2,7 @@
 	import Achievement from '$lib/components/Achievement.svelte';
 	import Overlay from '$lib/components/Overlay.svelte';
 	import Quest from '$lib/components/Quest.svelte';
+	import UpBar from '$lib/components/UpBar.svelte';
 
 	let achievement = $state([
 		{
@@ -28,7 +29,10 @@
 	]);
 </script>
 
-<h1>All Achievements</h1>
+<UpBar
+	upperText = "looking for some new activities?"
+	mainText = "Your quests"
+/>
 
 <Overlay>
 	{#each achievement as achievement}
