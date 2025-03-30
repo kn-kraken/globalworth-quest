@@ -7,7 +7,7 @@
 </script>
 
 <div
-	class="relative h-full w-full touch-none"
+	class="relative w-full grow touch-none"
 	onpointerdown={(e) => (touchPosition = { x: e.offsetX, y: e.offsetY })}
 	onpointermove={(e) => {
 		e.preventDefault();
