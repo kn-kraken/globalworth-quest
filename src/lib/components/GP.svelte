@@ -6,5 +6,5 @@
 
 <div class="mr-3 flex items-center gap-1.5">
 	<img src={money} alt="money" class="transparent-image h-auto w-[22px]" />
-	<p class="text-sm">{@render children()} rp</p>
+	<p class="text-sm">{@render children()} gp</p>
 </div>
