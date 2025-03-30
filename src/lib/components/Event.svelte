@@ -1,7 +1,7 @@
 <script>
     import { Keyboard_arrow_down, Keyboard_arrow_up } from 'svelte-google-materialdesign-icons';
 	import Wrapper from "./Wrapper.svelte";
-    import defaultEventImage from '../../resources/event_background.jpg'
+    import defaultEventImage from '../../resources/event_background.png'
 	import Gp from './GP.svelte';
     import Xp from './XP.svelte';
     import Rp
@@ -42,7 +42,7 @@
                 <Keyboard_arrow_up color='#f7f7f7'/>
             {/if}
         </button>
-        <p class='text-[#f7f7f7] mt-auto ml-2 mb-2 font-bold text-xl'>{title}</p>
+        <p class='text-[#f7f7f7] mt-auto ml-2 mb-2 font-bold text-xl' style="text-shadow: 2px 2px #000000;">{title}</p>
     </div>
     <div class="flex-col h-auto">
         <div class="border-t-2 border-dashed border-[#705037]-500 w-full my-4"

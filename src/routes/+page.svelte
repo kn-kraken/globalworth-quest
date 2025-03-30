@@ -22,3 +22,4 @@
 		<Map {position} />
 	</Canvas>
 </div>
+
