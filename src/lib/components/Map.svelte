@@ -56,27 +56,27 @@
 	});
 
 	const spheres = [
-		{ x: 1.8, y: -3, z: -0.5 },
-		{ x: 1.4 - 0.2 / 3, y: -3, z: -0.5 },
-		{ x: 1.0 - 0.4 / 3, y: -3, z: -0.5 },
-		{ x: 0.6 - 0.6 / 3, y: -3, z: -0.5 },
-		{ x: 0.6 - 0.6 / 3, y: -3, z: -0.1 },
-		{ x: 0.6 - 0.6 / 3, y: -3, z: 0.3 },
-		{ x: 0.0, y: -3, z: 0.3 },
-		{ x: 0.0, y: -2.7, z: 0.1 },
-		{ x: 0.0, y: -2.4, z: 0.1 },
-		{ x: 0.0, y: -2.1, z: 0.1 },
-		{ x: 0.0, y: -1.8, z: 0.1 },
-		{ x: 0.0, y: -1.5, z: 0.1 },
-		{ x: 0.0, y: -1.2, z: 0.1 },
-		{ x: 0.0, y: -0.9, z: 0.1 },
-		{ x: 0.0, y: -0.6, z: 0.1 },
-		{ x: 0.0, y: -0.3, z: 0.1 },
-		{ x: -0.2 + 0.6 / 3, y: 0, z: 0.3 },
-		{ x: 0.6 - 0.6 / 3, y: 0, z: 0.3 },
-		{ x: 0.6 - 0.6 / 3, y: 0, z: -0.1 },
-		{ x: 0.6 - 0.6 / 3, y: 0, z: -0.5 },
-		{ x: 0.6 - 0.6 / 3, y: 0, z: -0.9 }
+		{ color: 'red', x: 1.8, y: -3, z: -0.5 },
+		{ color: 'red', x: 1.4 - 0.2 / 3, y: -3, z: -0.5 },
+		{ color: 'red', x: 1.0 - 0.4 / 3, y: -3, z: -0.5 },
+		{ color: 'red', x: 0.6 - 0.6 / 3, y: -3, z: -0.5 },
+		{ color: 'red', x: 0.6 - 0.6 / 3, y: -3, z: -0.1 },
+		{ color: 'red', x: 0.6 - 0.6 / 3, y: -3, z: 0.3 },
+		{ color: 'red', x: 0.0, y: -3, z: 0.3 },
+		{ color: 'red', x: 0.0, y: -2.7, z: 0.1 },
+		{ color: 'red', x: 0.0, y: -2.4, z: 0.1 },
+		{ color: 'red', x: 0.0, y: -2.1, z: 0.1 },
+		{ color: 'red', x: 0.0, y: -1.8, z: 0.1 },
+		{ color: 'red', x: 0.0, y: -1.5, z: 0.1 },
+		{ color: 'red', x: 0.0, y: -1.2, z: 0.1 },
+		{ color: 'red', x: 0.0, y: -0.9, z: 0.1 },
+		{ color: 'red', x: 0.0, y: -0.6, z: 0.1 },
+		{ color: 'red', x: 0.0, y: -0.3, z: 0.1 },
+		{ color: 'red', x: -0.2 + 0.6 / 3, y: 0, z: 0.3 },
+		{ color: 'red', x: 0.6 - 0.6 / 3, y: 0, z: 0.3 },
+		{ color: 'red', x: 0.6 - 0.6 / 3, y: 0, z: -0.1 },
+		{ color: 'red', x: 0.6 - 0.6 / 3, y: 0, z: -0.5 },
+		{ color: 'yellow', x: 0.6 - 0.6 / 3, y: 0, z: -0.9 }
 	];
 
 	let cameraRef: PerspectiveCamera;
@@ -115,7 +115,7 @@
 			<T.Mesh position={[sphere.x, sphere.y, sphere.z]}>
 				<T.SphereGeometry args={[0.1, 32, 32]} />
 				<T.MeshStandardMaterial
-					color={'red'}
+					color={sphere.color}
 					transparent
 					opacity={selectedFloor === null || sphere.y === selectedFloor * 1.5
 						? 0.9
