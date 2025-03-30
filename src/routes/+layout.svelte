@@ -5,5 +5,5 @@
 	let { children } = $props();
 </script>
 
-<UpBar mainText="ligma" upperText="balls" />
+<UpBar mainText="Leaderboard" upperText="time to hit the major leagues" />
 {@render children()}

@@ -16,7 +16,7 @@
             ranks: [
                 { rp: 612, iconSrc: stars5, name: "Rafał Pomorski" },
                 { rp: 104, iconSrc: stars3, name: "Robert Makłowicz" },
-                { rp: 67, iconSrc: stars2, name: "Janusz Piechociński" }
+                { rp: 67, iconSrc: stars2, name: "Janusz Gajos" }
             ]
         },
         {
@@ -27,7 +27,7 @@
                 { rp: 720, iconSrc: stars5, name: "Maryla Rodowicz" },
                 { rp: 612, iconSrc: stars5, name: "Rafał Pomorski" },
                 { rp: 104, iconSrc: stars3, name: "Robert Makłowicz" },
-                { rp: 67, iconSrc: stars2, name: "Janusz Piechociński" }
+                { rp: 67, iconSrc: stars2, name: "Janusz Gajos" }
             ]
         }
     ]

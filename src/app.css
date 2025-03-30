@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: 'Inclusive Sans';
-    src: 
+    src:
         url('./resources/fonts/InclusiveSans-Bold.ttf'),
         url('./resources/fonts/InclusiveSans-BoldItalic.ttf'),
         url('./resources/fonts/InclusiveSans-Italic.ttf'),
@@ -18,8 +18,15 @@
 }
 
 @font-face {
+    font-family: 'Inclusive Sans';
+    src: url('./resources/fonts/InclusiveSans-Light.ttf') format('truetype');
+    font-weight: 300; /* Light/Thin */
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Belanosima';
-    src: 
+    src:
         url('./resources/fonts/Belanosima-Bold.ttf') format('truetype'),
         url('./resources/fonts/Belanosima-Regular.ttf') format('truetype'),
         url('./resources/fonts/Belanosima-SemiBold.ttf') format('truetype');

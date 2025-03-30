@@ -20,13 +20,15 @@
         <Stats iconSrc={iconSrc} {color} width="w-28" translate="-translate-x-32">
             <p class="font-bold text-[#f7f7f7] ml-auto pr-2.5 md-12">920 rp</p>
         </Stats>
-        <p class="font-bold text-[#f7f7f7] mt-2">YOUR TEAM</p>
+        <p class="font-bold text-[#f7f7f7] mt-2 text-lg">YOUR TEAM</p>
     </div>
     {:else}
         <Stats iconSrc={iconSrc} {color} width="w-72" translate="-translate-x-[18.5rem]">
             <div class="ml-7 w-64 h-12 rounded-r-full flex pr-2.5 pd-4">
-                <p class="font-bold text-[#f7f7f7] ml-6 pr-2.5 md-12">{rank1.rp} rp</p>
-                <p class="text-[#f7f7f7] pr-2.5 md-12">{rank1.name}</p>
+                <p class="font-bold text-[#f7f7f7] ml-6 pr-2.5 md-12 ">{rank1.rp} rp</p>
+                <div class="ml-auto w-36">
+                    <p class="text-[#f7f7f7] pr-2.5 md-12 font-inclusive font-light tracking-wide">{rank1.name}</p>
+                </div>
             </div>
         </Stats>
     {/if}
@@ -40,6 +42,6 @@
     {/snippet}
 </CardWrapper>
 <div class="bg-[#60412c] text-[#f7f7f7] rounded-b-3xl ml-auto h-13 z-0 -mt-8 w-44">
-    <p class="mt-7 text-center">full leaderboard</p>
+    <p class="mt-7 text-center font-inclusive font-light tracking-wide">full leaderboard</p>
 </div>
 
