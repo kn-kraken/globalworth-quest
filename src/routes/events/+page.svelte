@@ -1,6 +1,7 @@
 <script>
     import Event from "$lib/components/Event.svelte";
     import Overlay from "$lib/components/Overlay.svelte";
+    import UpBar from '$lib/components/UpBar.svelte';
 
     let events = $state([
         {
@@ -36,7 +37,10 @@
     ])
 </script>
 
-<h1>All Events</h1>
+<UpBar
+    upperText = "looking for some new activities?"
+    mainText = "Ongoing events"
+/>
 
 <Overlay>
     {#each events as event}
