@@ -2,12 +2,13 @@
 <script>
 
 	// Props
+	import UpBarButton from '$lib/components/UpBarButton.svelte';
+
 	export let currentXP = 3;
 	export let totalXP = 8;
 	export let iconSrc = "src/assets/icon_shield.png";
 	export let username = "Jan Kowalski";
 	export let readyText = "ready for a quest?";
-	export let onProfileClick = () => {};
 	export let isOpen = false;
 	$: filledSegments = Math.floor(0.7 * 8);
 	const segments = Array(8).fill(0);
@@ -19,15 +20,7 @@
 			<span class="text-xs text-gray-500">{readyText}</span>
 			<span class="text-2xl font-medium">{username}</span>
 		</div>
-
-		<button
-			on:click={onProfileClick}
-			class="w-10 h-10 scale-120 rounded-full border-2 border-gray-400 flex items-center justify-center bg-white"
-		>
-			<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-			</svg>
-		</button>
+		<UpBarButton/>
 	</div>
 
 	<div class="flex items-center w-full space-x-2">
