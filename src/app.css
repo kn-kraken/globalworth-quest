@@ -1,3 +1,34 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+@font-face {
+    font-family: 'Inclusive Sans';
+    src: 
+        url('./resources/fonts/InclusiveSans-Bold.ttf'),
+        url('./resources/fonts/InclusiveSans-BoldItalic.ttf'),
+        url('./resources/fonts/InclusiveSans-Italic.ttf'),
+        url('./resources/fonts/InclusiveSans-Light.ttf'),
+        url('./resources/fonts/InclusiveSans-LightItalic.ttf'),
+        url('./resources/fonts/InclusiveSans-Medium.ttf'),
+        url('./resources/fonts/InclusiveSans-MediumItalic.ttf'),
+        url('./resources/fonts/InclusiveSans-Regular.ttf'),
+        url('./resources/fonts/InclusiveSans-SemiBold.ttf'),
+        url('./resources/fonts/InclusiveSans-SemiBoldItalic.ttf');
+}
+
+@font-face {
+    font-family: 'Belanosima';
+    src: 
+        url('./resources/fonts/Belanosima-Bold.ttf') format('truetype'),
+        url('./resources/fonts/Belanosima-Regular.ttf') format('truetype'),
+        url('./resources/fonts/Belanosima-SemiBold.ttf') format('truetype');
+}
+
+html {
+    font-family: 'Inclusive Sans';
+}
+
+.wonky-font {
+    font-family: 'Belanosima';
+}
